@@ -13,11 +13,11 @@ const selectedProducts = {
   colors: ["Red", "Black"],
   images: [
     {
-      url: "https://picsum.photos/500/300?random=1",
+      url: "https://picsum.photos/500/300?random=201",
       altText: "Stylish Jacket",
     },
     {
-      url: "https://picsum.photos/500/300?random=2",
+      url: "https://picsum.photos/500/300?random=202",
       altText: "Stylish Jackets",
     },
   ],
@@ -110,7 +110,7 @@ const ProductDetails = () => {
                 <img
                   src={mainImage}
                   alt="Main Product"
-                  className="w-full h-auto object-cover rounded-lg"
+                  className="w-full h-auto lg:h-[500px] object-cover rounded-lg"
                 />
               </div>
             </div>

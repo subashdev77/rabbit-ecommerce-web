@@ -29,7 +29,7 @@ const Navbar = () => {
         {/* Navigation Links (Hidden on mobile) */}
         <div className="hidden md:flex space-x-4">
           <Link
-            to="#"
+            to="/collections/all"
             className="hover:text-gray-600 text-gray-700 text-sm font-medium uppercase"
           >
             Men
