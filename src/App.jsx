@@ -7,6 +7,7 @@ import Login from "./pages/Login";
 import RegisterPage from "./pages/Register";
 import ProfilePage from "./pages/Profile";
 import CollectionPage from "./pages/CollectionPage";
+import ProductDetails from "./components/Products/ProductDetails";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
               path="/collections/:collection"
               element={<CollectionPage />}
             />
+            <Route path="/product/:id" element={<ProductDetails />} />
           </Route>
         </Routes>
       </BrowserRouter>

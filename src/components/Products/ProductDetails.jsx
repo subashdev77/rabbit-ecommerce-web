@@ -7,7 +7,7 @@ const selectedProducts = {
   price: 120,
   originalPrice: 150,
   description: "This is a stylish jacket for any occasion",
-  brand: "FashionBrand",
+  brand: "Fashion Brand",
   material: "Leather",
   size: ["S", "M", "L", "XL"],
   colors: ["Red", "Black"],
