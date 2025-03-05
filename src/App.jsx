@@ -8,6 +8,7 @@ import RegisterPage from "./pages/Register";
 import ProfilePage from "./pages/Profile";
 import CollectionPage from "./pages/CollectionPage";
 import ProductDetails from "./components/Products/ProductDetails";
+import Checkout from "./components/Cart/Checkout";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
               element={<CollectionPage />}
             />
             <Route path="/product/:id" element={<ProductDetails />} />
+            <Route path="/checkout" element={<Checkout />} />
           </Route>
         </Routes>
       </BrowserRouter>
