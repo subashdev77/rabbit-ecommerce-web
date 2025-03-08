@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import PayPalButton from "./PayPalButton";
+import RazorpayButton from "./RazorpayButton";
 
 const cart = {
   products: [
@@ -41,7 +41,6 @@ const Checkout = () => {
   };
 
   const handlePaymentSuccess = (details) => {
-    console.log("Payment Success!", details);
     navigate("/order-confirmation");
   };
 
@@ -181,8 +180,7 @@ const Checkout = () => {
               </button>
             ) : (
               <div>
-                <h3 className="text-lg mb-4">Pay with Paypal</h3>
-                <PayPalButton
+                <RazorpayButton
                   amount={100}
                   onSuccess={handlePaymentSuccess}
                   onError={(err) => alert("Payment failed. Try again.")}
