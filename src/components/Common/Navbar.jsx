@@ -54,8 +54,14 @@ const Navbar = () => {
           </Link>
         </div>
 
-        {/* Icons Section */}
+        {/*Right Icons Section */}
         <div className="flex items-center space-x-4">
+          <Link
+            to="/admin"
+            className="block bg-black px-2 py-0.5 rounded text-[12px] text-white"
+          >
+            Admin
+          </Link>
           {/* Profile Icon */}
           <Link to="/profile" className="hover:text-black" aria-label="Profile">
             <FaRegUser />
