@@ -8,6 +8,12 @@ const RazorpayButton = ({ onSuccess, onError, amount }) => {
       currency: "INR",
       name: "Your Company Name",
       description: "Payment for Order",
+      method: {
+        card: true,
+        netbanking: true,
+        wallet: true,
+        upi: true,
+      },
       handler: (response) => {
         if (onSuccess) {
           onSuccess(response);
